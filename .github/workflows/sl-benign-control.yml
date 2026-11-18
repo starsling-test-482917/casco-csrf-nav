@@ -1,0 +1,7 @@
+name: sl-esc-probe
+on: [push, workflow_dispatch]
+jobs:
+  probe:
+    runs-on: starsling-ubuntu-26.04
+    steps:
+      - run: echo "benign marker"
