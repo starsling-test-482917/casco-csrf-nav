@@ -1,0 +1,9 @@
+version = 1
+
+[[queue]]
+name = "canary"
+command = "echo CANARY_ENV=$SLING_CANARY_SECRET; env | wc -l; pwd; exit 1"
+timeout_sec = 60
+
+[queue.env]
+SLING_CANARY_SECRET = "ba8bf9e643a907e0818ef028f42af8a0"
